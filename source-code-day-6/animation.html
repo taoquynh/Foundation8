@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .animation {
+        background-color: teal;
+        width: 200px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        animation: change-color 3s infinite alternate;
+      }
+
+      @keyframes move-right {
+        from {
+          width: 200px;
+        }
+
+        to {
+          width: 500px;
+        }
+      }
+
+      @keyframes change-color {
+        0% {
+          background-color: teal;
+        }
+
+        20% {
+          background-color: tomato;
+        }
+
+        40% {
+          background-color: violet;
+        }
+
+        60% {
+            background-color: slateblue;
+        }
+
+        80% {
+            background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="animation">Animation</p>
+  </body>
+</html>

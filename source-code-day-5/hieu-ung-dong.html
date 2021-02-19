@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiệu ứng động trong CSS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .login {
+        text-align: center;
+        padding: 10px 20px 10px 20px;
+        background-color: blue;
+        color: white;
+        width: 100px;
+        /* transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in; */
+        transition: all 2s ease-in-out 0.05s;
+      }
+
+      .login:hover {
+        background-color: tomato;
+        border-radius: 50px;
+        opacity: 0.5;
+        transform: scale(1.2);
+      }
+
+      .bai2 {
+        width: 500px;
+        height: 500px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .photo-row {
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      img {
+          width: 30%;
+          transition: all 2s;
+      }
+
+      img:hover {
+          transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">Login</div>
+
+    <div class="bai2">
+      <div class="photo-row">
+        <img
+          src="https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg"
+          alt="anh-cay"
+        />
+        <img
+          src="https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg"
+          alt="anh-cay"
+        />
+        <img
+          src="https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg"
+          alt="anh-cay"
+        />
+      </div>
+      <div class="photo-row">
+        <img
+          src="https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg"
+          alt="anh-cay"
+        />
+        <img
+          src="https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg"
+          alt="anh-cay"
+        />
+        <img
+          src="https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg"
+          alt="anh-cay"
+        />
+      </div>
+      <div class="photo-row">
+        <img
+          src="https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg"
+          alt="anh-cay"
+        />
+        <img
+          src="https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg"
+          alt="anh-cay"
+        />
+        <img
+          src="https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg"
+          alt="anh-cay"
+        />
+      </div>
+    </div>
+  </body>
+</html>

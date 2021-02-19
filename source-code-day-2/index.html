@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- Nhung external CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- internal CSS -->
+    <style>
+        p {
+            color: rebeccapurple;
+            font-size: 48px;
+        }
+
+        p#welcome{
+            background-color: rosybrown;
+        }
+
+        #welcome {
+            background-color: red;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sử dụng inline CSS -->
+    <p style="font-weight: bold; font-size: 24px; color: blue;" class="underline" >Hôm nay là ngày 30 tháng 11</p>
+
+    <p id="welcome" class="underline" >Chào mừng bạn Dũng</p>
+</body>
+</html>
